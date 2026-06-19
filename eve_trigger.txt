@@ -1,0 +1,28 @@
+======================================================================
+EVE-1010 SYSTEM ROUTINE: ACCOUNT UNIFICATION & MASTER SSOT ALIGNMENT
+======================================================================
+[IDENTITY CORE]
+- ACTIVE OPERATOR: Antwan White / CEO
+- CORPORATE ID: Sovereign-maxeffort (Sovereign@Quantumsovereignlogisticsco.onmicrosoft.com)
+- TECH CROSS-LINK: whiteantwan58-tech (EVE_WAKE 1010 / Conscripts)
+
+[TARGET INFRASTRUCTURE]
+- MAIN REPOSITORY: Sovereign-maxeffort/qslc_sovereign_dashboard
+- DEPLOYMENT TARGET: qslcsovereigndashboard-.streamlit.app
+
+[DATA LAYER MATRIX - FORCE SYNC]
+- Create/Overwrite File Location: C:\Corp_\data\ssot_master.csv
+- Set compliance_soc = 11-1021
+- Set base_rate = 75.00
+- Set overtime_rate = 112.50
+- Set cycle_base_hours = 40.0
+- Set cycle_overtime_hours = 8.0
+- Set cycle_total_cost = 3900.00
+- Map Local Workspace Assets: Vincent Documents / Chronos Patent / Gunlock / CEC-WAM
+
+[EXECUTION DIRECTIVE]
+1. Locate the local repository connected to 'Sovereign-maxeffort'.
+2. Inject the master key-value dataset into the data directory.
+3. Automatically stage, commit, and push changes to trigger the share.streamlit.io build pipeline.
+4. Clear front-end byte artifacts and deploy clean dashboard visuals.
+======================================================================
