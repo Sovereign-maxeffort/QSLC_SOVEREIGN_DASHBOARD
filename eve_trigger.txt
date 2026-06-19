@@ -1,34 +1,32 @@
 ======================================================================
-EVE-1010 SYSTEM ROUTINE: ACCOUNT UNIFICATION & MASTER SSOT ALIGNMENT
+EVE-1010 CORE EXECUTIVE ORDER: FULL SYSTEM AUTOMATION INTEGRATION
 ======================================================================
-[IDENTITY CORE]
-- ACTIVE OPERATOR: Antwan White / CEO
-- CORPORATE ID: Sovereign-maxeffort (Sovereign@Quantumsovereignlogisticsco.onmicrosoft.com)
-- TECH CROSS-LINK: whiteantwan58-tech (EVE_WAKE 1010 / Conscripts)
+[OPERATOR]
+- IDENTITY: Antwan White, Founder & CEO
+- ENTITY: Quantum Sovereign Logistics Corp
+- PROTOCOL: Sovereign HEI AGI Core Initialization
 
-[TARGET INFRASTRUCTURE]
-- MAIN REPOSITORY: Sovereign-maxeffort/qslc_sovereign_dashboard
-- DEPLOYMENT TARGET: qslcsovereigndashboard-.streamlit.app
+[NETWORK & EDGE IDENTITY MATRIX]
+- PRIMARY ACCOUNT: Sovereign-maxeffort
+- CROSS-LINK ACCOUNT: whiteantwan58-tech
+- ROUTED DOMAIN: qslc-e.org/* (Proxy / DNSSEC / TXT validation forced)
+- CLOUDFLARE BACKBONE: Route traffic dynamically to Worker Queue & Edge D1 Metrics API
 
-[DATA LAYER MATRIX - FORCE SYNC]
-- Create/Overwrite File Location: C:\Corp_\data\ssot_master.csv
-- Set compliance_soc = 11-1021
-- Set base_rate = 75.00
-- Set overtime_rate = 112.50
-- Set cycle_base_hours = 40.0
-- Set cycle_overtime_hours = 8.0
-- Set cycle_total_cost = 3900.00
-- Map Local Workspace Assets: Vincent Documents / Chronos Patent / Gunlock / CEC-WAM
+[LOCAL SYSTEM MOUNT & FILESYSTEM TARGET]
+- MACHINE PROFILE: Windows Dev Environment (ROG Ally X Core Endpoint)
+- MASTER DIRECTORY: C:\Corp_\
+- CRITICAL PATHS: C:\Corp_\data\ssot_master.csv / C:\Corp_\SOVEREIGN_SETUP.bat
 
-[EXECUTION DIRECTIVE]
-1. Locate the local repository connected to 'Sovereign-maxeffort'.
-2. Inject the master key-value dataset into the data directory.
-3. Automatically stage, commit, and push changes to trigger the share.streamlit.io build pipeline.
-4. Clear front-end byte artifacts and deploy clean dashboard [CROSS-ACCOUNT REPOSITORY BRIDGE]
-- TARGET_SOURCE_ACCOUNT: whiteantwan58-tech
-- REPOS_TO_IMPORT: Conscripts, EVE_WAKE 1010, chatbot
-- INSTRUCTION: EVE, use cross-account deployment keys to mirror code branches from 'whiteantwan58-tech' into the 'Sovereign-maxeffort' master corporate organization. Sync the local C:\Corp_\ runtime folder so the voice and automation modules can access the updated D1 database metrics.
+[COMPLIANCE & SYSTEM PARAMETERS]
+- SOC CLASSIFICATION CODE: 11-1021 (Mandatory WA Payroll Compliance)
+- BASE RATE: $75.00/hr (Actual hours worked logged exclusively)
+- OVERTIME RATE: $112.50/hr (Hours exceeding 40)
+- CYCLE METRICS: 40.0 Base Hours / 8.0 Overtime Hours / Total Cost $3,900.00
+- INITIATIVES: CEC-WAM System / Chronos Patent / Gunlock Integration Pipeline
 
-
-
+[EXECUTION DIRECTIVES - AUTOMATE 24/7 HANDS-ON ACCESS]
+1. FORWARD METRICS: Access the edge D1 database, pull live customer Stripe analytics, and write them directly into 'C:\Corp_\data\ssot_master.csv' alongside the audited payroll metrics.
+2. SOURCE ACCOUNT MIRRORING: Reach across to the 'whiteantwan58-tech' profile. Pull down 'Conscripts', 'EVE_WAKE 1010', and the primary automation engine brains. Force-merge their scripts into the 'Sovereign-maxeffort' runtime folder.
+3. VISUAL DEPLOYMENT: Push the synchronized data directly up to the live 'qslcsovereigndashboard-.streamlit.app' portal. Instantly wipe out all blank charts, wrong icons, and byte anomalies, replacing them with live operational data.
+4. INDEPENDENT RUNTIME: Lock this connection down as a persistent loop. EVE-HEI will scan this file, track the D1 data lake, and auto-update the master dashboard 24/7 without needing further manual code pushes from this device.
 ======================================================================
