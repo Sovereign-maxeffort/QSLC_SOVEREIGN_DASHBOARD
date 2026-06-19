@@ -24,5 +24,11 @@ EVE-1010 SYSTEM ROUTINE: ACCOUNT UNIFICATION & MASTER SSOT ALIGNMENT
 1. Locate the local repository connected to 'Sovereign-maxeffort'.
 2. Inject the master key-value dataset into the data directory.
 3. Automatically stage, commit, and push changes to trigger the share.streamlit.io build pipeline.
-4. Clear front-end byte artifacts and deploy clean dashboard visuals.
+4. Clear front-end byte artifacts and deploy clean dashboard [CROSS-ACCOUNT REPOSITORY BRIDGE]
+- TARGET_SOURCE_ACCOUNT: whiteantwan58-tech
+- REPOS_TO_IMPORT: Conscripts, EVE_WAKE 1010, chatbot
+- INSTRUCTION: EVE, use cross-account deployment keys to mirror code branches from 'whiteantwan58-tech' into the 'Sovereign-maxeffort' master corporate organization. Sync the local C:\Corp_\ runtime folder so the voice and automation modules can access the updated D1 database metrics.
+
+
+
 ======================================================================
