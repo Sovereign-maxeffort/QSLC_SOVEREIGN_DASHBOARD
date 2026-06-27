@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QSLC EVE Base44 SSOT Schema",
+  "type": "object",
+  "required": ["products", "accounts", "services", "appointments", "payments"],
+  "properties": {
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["product_id", "name", "base_price_cents", "currency", "billing_model", "linked_app_id", "destination_account_id", "status"],
+        "properties": {
+          "product_id": {"type": "string"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "base_price_cents": {"type": "integer", "minimum": 0},
+          "currency": {"type": "string", "default": "usd"},
+          "billing_model": {"type": "string", "enum": ["one_time", "monthly", "per_use", "hourly"]},
+          "formula_id": {"type": "string"},
+          "linked_app_id": {"type": "string"},
+          "destination_account_id": {"type": "string"},
+          "status": {"type": "string", "enum": ["draft", "sellable", "paused", "retired"]}
+        }
+      }
+    },
+    "accounts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["account_id", "provider", "display_name", "status"],
+        "properties": {
+          "account_id": {"type": "string"},
+          "provider": {"type": "string", "enum": ["stripe", "paypal", "bank", "manual"]},
+          "display_name": {"type": "string"},
+          "external_account_ref": {"type": "string"},
+          "status": {"type": "string", "enum": ["active", "disabled", "needs_review"]}
+        }
+      }
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["service_id", "name", "product_id", "duration_minutes", "status"],
+        "properties": {
+          "service_id": {"type": "string"},
+          "name": {"type": "string"},
+          "product_id": {"type": "string"},
+          "duration_minutes": {"type": "integer", "minimum": 1},
+          "calendar_provider": {"type": "string", "enum": ["google", "outlook", "calendly", "base44", "manual"]},
+          "status": {"type": "string", "enum": ["active", "paused", "retired"]}
+        }
+      }
+    },
+    "appointments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["appointment_id", "user_id", "service_id", "scheduled_start", "status"],
+        "properties": {
+          "appointment_id": {"type": "string"},
+          "user_id": {"type": "string"},
+          "service_id": {"type": "string"},
+          "scheduled_start": {"type": "string", "format": "date-time"},
+          "scheduled_end": {"type": "string", "format": "date-time"},
+          "status": {"type": "string", "enum": ["requested", "scheduled", "completed", "cancelled", "no_show"]}
+        }
+      }
+    },
+    "payments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["payment_id", "product_id", "user_id", "amount_cents", "currency", "destination_account_id", "status"],
+        "properties": {
+          "payment_id": {"type": "string"},
+          "product_id": {"type": "string"},
+          "user_id": {"type": "string"},
+          "appointment_id": {"type": "string"},
+          "amount_cents": {"type": "integer", "minimum": 0},
+          "currency": {"type": "string", "default": "usd"},
+          "destination_account_id": {"type": "string"},
+          "provider": {"type": "string", "enum": ["stripe", "paypal", "manual"]},
+          "provider_payment_ref": {"type": "string"},
+          "status": {"type": "string", "enum": ["quoted", "pending", "paid", "failed", "refunded", "cancelled"]}
+        }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document_id", "template_id", "user_id", "status"],
+        "properties": {
+          "document_id": {"type": "string"},
+          "template_id": {"type": "string"},
+          "user_id": {"type": "string"},
+          "case_id": {"type": "string"},
+          "file_path": {"type": "string"},
+          "status": {"type": "string", "enum": ["draft", "generated", "signed", "filed", "archived"]}
+        }
+      }
+    },
+    "audit_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["event_id", "timestamp", "actor", "event_type", "status"],
+        "properties": {
+          "event_id": {"type": "string"},
+          "timestamp": {"type": "string", "format": "date-time"},
+          "actor": {"type": "string"},
+          "event_type": {"type": "string"},
+          "status": {"type": "string"},
+          "details": {"type": "object"}
+        }
+      }
+    }
+  }
+}
